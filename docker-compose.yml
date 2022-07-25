@@ -1,0 +1,9 @@
+version: '2.3'
+
+services:
+  pdns:
+    build: pdns
+    init: true
+    ports:
+    - "127.0.0.1:5300:53/udp"
+    - "127.0.0.1:5300:53/tcp"
